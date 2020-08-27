@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ghreview
-  namespace: ghreview
+  namespace: jmainguy-ghreview
 spec:
   replicas: 1
   selector:
@@ -15,10 +15,22 @@ spec:
     spec:
       containers:
         - name: ghreview
-          image: 'hub.soh.re/ghreview:v0.0.1'
+          image: 'hub.soh.re/ghreview:v0.0.2'
           env:
           - name: NODELABEL
             value: node-role.kubernetes.io/compute=true
+          - name: ghReviewToken
+            value: ADDTOKENHERE
+          - name: slackUserID
+            value: USERIDHERE
+          - name: slackToken
+            value: ADDTOKENHERE
+          - name: githubName
+            value: ADDNAMEHERE
+          - name: subscribedRepos
+            value: "Example/aebot
+Example/aobot
+Example/arbot"
           resources:
             limits:
               cpu: "1"

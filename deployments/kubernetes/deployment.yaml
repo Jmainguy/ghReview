@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: ghreview
-          image: 'hub.soh.re/ghreview:v0.0.2'
+          image: 'hub.soh.re/ghreview:v0.0.3'
           env:
           - name: NODELABEL
             value: node-role.kubernetes.io/compute=true
@@ -28,9 +28,7 @@ spec:
           - name: githubName
             value: ADDNAMEHERE
           - name: subscribedRepos
-            value: "Example/aebot
-Example/aobot
-Example/arbot"
+            value: Example/aebot Example/arbot Example/aobot
           resources:
             limits:
               cpu: "1"

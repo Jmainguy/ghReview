@@ -16,7 +16,7 @@ func main() {
 	slackToken := os.Getenv("slackToken")
 	slackUserID := os.Getenv("slackUserID")
 	githubName := os.Getenv("githubName")
-	subscribedRepos := strings.Split(os.Getenv("subscribedRepos"), "\n")
+	subscribedRepos := strings.Split(os.Getenv("subscribedRepos"), " ")
 
 	api := slack.New(slackToken)
 	ctx := context.Background()

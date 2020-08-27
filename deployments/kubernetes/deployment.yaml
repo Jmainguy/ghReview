@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: ghreview
-          image: 'hub.soh.re/ghreview:v0.0.3'
+          image: 'hub.soh.re/ghreview:v0.0.4'
           env:
           - name: NODELABEL
             value: node-role.kubernetes.io/compute=true

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ghreview
+  namespace: ghreview
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ghreview
+  template:
+    metadata:
+      labels:
+        app: ghreview
+    spec:
+      containers:
+        - name: ghreview
+          image: 'hub.soh.re/ghreview:v0.0.1'
+          env:
+          - name: NODELABEL
+            value: node-role.kubernetes.io/compute=true
+          resources:
+            limits:
+              cpu: "1"
+              memory: 1Gi
+            requests:
+              cpu: 200m
+              memory: 200Mi

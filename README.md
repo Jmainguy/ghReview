@@ -1,5 +1,5 @@
 # ghReview
-[![Release](https://img.shields.io/github/release/Jmainguy/k8sCapcity.svg?style=flat-square)](https://github.com/Jmainguy/k8sCapcity/releases/latest)
+[![Release](https://img.shields.io/github/release/Jmainguy/ghReview.svg?style=flat-square)](https://github.com/Jmainguy/ghReview/releases/latest)
 
 Application to check Github for Pull Requests, where the user is assigned as a reviewer, and ping them on Slack about it.
 

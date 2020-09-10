@@ -16,3 +16,8 @@ Grab Release from [The Releases Page](https://github.com/Jmainguy/ghReview/relea
 export GO111MODULE=on
 go build
 ```
+
+## Example of bot running
+```slack
+ghReview: You have been assigned to review https://github.com/jmainguy/ghReview/pull/113
+```

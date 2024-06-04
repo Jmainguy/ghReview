@@ -8,7 +8,7 @@ require (
 	github.com/google/go-github/v32 v32.1.0
 	github.com/google/go-github/v62 v62.0.0
 	github.com/slack-go/slack v0.13.0
-	golang.org/x/oauth2 v0.18.0
+	golang.org/x/oauth2 v0.20.0
 )
 
 require (
@@ -39,7 +39,7 @@ require (
 	cloud.google.com/go/clouddms v1.5.0 // indirect
 	cloud.google.com/go/cloudtasks v1.10.0 // indirect
 	cloud.google.com/go/compute v1.20.1 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	cloud.google.com/go/contactcenterinsights v1.6.0 // indirect
 	cloud.google.com/go/container v1.15.0 // indirect
 	cloud.google.com/go/containeranalysis v0.9.0 // indirect

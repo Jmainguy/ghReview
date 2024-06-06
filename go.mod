@@ -8,7 +8,7 @@ require (
 	github.com/google/go-github/v32 v32.1.0
 	github.com/google/go-github/v62 v62.0.0
 	github.com/slack-go/slack v0.13.0
-	golang.org/x/oauth2 v0.20.0
+	golang.org/x/oauth2 v0.21.0
 )
 
 require (

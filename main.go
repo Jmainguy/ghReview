@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/google/go-github/v32/github"
-	"github.com/slack-go/slack"
-	"golang.org/x/oauth2"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/google/go-github/v64/github"
+	"github.com/slack-go/slack"
+	"golang.org/x/oauth2"
 )
 
 func main() {

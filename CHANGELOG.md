@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/Jmainguy/ghReview/compare/v0.0.6...v0.0.7) (2024-09-16)
+
+
+### Bug Fixes
+
+* trigger release after fixing goreleaser config ([1e4375a](https://github.com/Jmainguy/ghReview/commit/1e4375a138dea0c1787b7110208b9e93599affe4))
+
 ## [0.0.6](https://github.com/Jmainguy/ghReview/compare/v0.0.5...v0.0.6) (2024-09-16)
 
 

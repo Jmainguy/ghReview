@@ -7,7 +7,7 @@ on:
 
 jobs:
   release-please:
-    uses: Jmainguy/golang-workflows/.github/workflows/golang-release.yml@docker
+    uses: Jmainguy/golang-workflows/.github/workflows/golang-release.yml@v1
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
       docker_username: ${{ secrets.DOCKER_USERNAME }}

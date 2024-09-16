@@ -13,7 +13,6 @@ Grab Release from [The Releases Page](https://github.com/Jmainguy/ghReview/relea
 
 ## Build
 ```/bin/bash
-export GO111MODULE=on
 go build
 ```
 

@@ -6,7 +6,10 @@
       "release-type": "go",
       "changelog-path": "CHANGELOG.md",
       "extra-files": [
-        "deployments/kubernetes/deployment.yaml"
+        {
+          "type": "generic",
+          "path": "deployments/kubernetes/deployment.yaml"
+        }
       ]
     }
   },

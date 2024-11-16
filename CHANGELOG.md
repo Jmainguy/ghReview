@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/Jmainguy/ghReview/compare/v1.0.0...v1.0.1) (2024-11-16)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/google/go-github/v65 to v66 ([4acd50e](https://github.com/Jmainguy/ghReview/commit/4acd50ef0b9a7bf75a9a87e970039053bb904ec5))
+* **deps:** update module github.com/google/go-github/v65 to v66 ([3df5744](https://github.com/Jmainguy/ghReview/commit/3df57447095f256a1165fdc2110d851fe034de9c))
+* **deps:** update module github.com/slack-go/slack to v0.15.0 ([b957b86](https://github.com/Jmainguy/ghReview/commit/b957b864c6f5e035928aa447630d553d5fa68781))
+* update deployment ([7ba47db](https://github.com/Jmainguy/ghReview/commit/7ba47db59279986bfe1e6f60949215aec90c6b56))
+
 ## [1.0.0](https://github.com/Jmainguy/ghReview/compare/v0.0.7...v1.0.0) (2024-09-16)
 
 

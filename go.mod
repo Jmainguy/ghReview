@@ -6,6 +6,7 @@ toolchain go1.23.4
 
 require (
 	github.com/google/go-github/v66 v66.0.0
+	github.com/google/go-github/v67 v67.0.0
 	github.com/slack-go/slack v0.15.0
 	golang.org/x/oauth2 v0.24.0
 )

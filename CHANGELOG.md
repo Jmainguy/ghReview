@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Jmainguy/ghReview/compare/v1.0.2...v1.0.3) (2024-12-26)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/google/go-github/v67 to v68 ([a91d465](https://github.com/Jmainguy/ghReview/commit/a91d465be7a2f46d732dfb831e7612483726ad9e))
+
 ## [1.0.2](https://github.com/Jmainguy/ghReview/compare/v1.0.1...v1.0.2) (2024-12-17)
 
 

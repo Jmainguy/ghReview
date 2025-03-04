@@ -2,7 +2,7 @@ module github.com/jmainguy/ghReview
 
 go 1.23
 
-toolchain go1.23.4
+toolchain go1.24.1
 
 require (
 	github.com/google/go-github/v67 v67.0.0

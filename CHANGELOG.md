@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.3](https://github.com/Jmainguy/ghReview/compare/v1.0.2...v1.0.3) (2025-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/google/go-github/v67 to v68 ([55a27bd](https://github.com/Jmainguy/ghReview/commit/55a27bd917a2765efe46dc9693c537450c66961a))
+* **deps:** update module github.com/google/go-github/v67 to v68 ([a91d465](https://github.com/Jmainguy/ghReview/commit/a91d465be7a2f46d732dfb831e7612483726ad9e))
+* **deps:** update module github.com/google/go-github/v68 to v69 ([49c1d79](https://github.com/Jmainguy/ghReview/commit/49c1d79804e74047a79965e631d3f5b7bccd379e))
+* **deps:** update module github.com/google/go-github/v68 to v69 ([0a67e2b](https://github.com/Jmainguy/ghReview/commit/0a67e2b6a69f4166384f3d5eaade066193573515))
+* **deps:** update module golang.org/x/oauth2 to v0.28.0 ([ab7f804](https://github.com/Jmainguy/ghReview/commit/ab7f804b5be8bcdf60ad46b2c1e664c7e2d44aa6))
+* **deps:** update module golang.org/x/oauth2 to v0.28.0 ([b422ef1](https://github.com/Jmainguy/ghReview/commit/b422ef1fbf8dfdd1391c089d44028efba2be13ef))
+* update to latest dependencies ([05e1857](https://github.com/Jmainguy/ghReview/commit/05e185745e3be275126b4dbe659359b551742a2d))
+
 ## [1.0.2](https://github.com/Jmainguy/ghReview/compare/v1.0.1...v1.0.2) (2024-12-17)
 
 

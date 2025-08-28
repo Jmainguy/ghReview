@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/Jmainguy/ghReview/compare/v1.0.3...v1.0.4) (2025-08-28)
+
+
+### Bug Fixes
+
+* update dependencies to latest ([0f76532](https://github.com/Jmainguy/ghReview/commit/0f76532ca58dd6bcf5b28eab4222fad21ab5262c))
+* update dependencies to latest ([8c5e80e](https://github.com/Jmainguy/ghReview/commit/8c5e80ec3b3e9912b84124c8a9a8045ca1722beb))
+
 ## [1.0.3](https://github.com/Jmainguy/ghReview/compare/v1.0.2...v1.0.3) (2025-04-19)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/Jmainguy/ghReview/compare/v1.0.6...v1.0.7) (2025-11-10)
+
+
+### Bug Fixes
+
+* use ko for building image ([a6b47eb](https://github.com/Jmainguy/ghReview/commit/a6b47ebaf4ee80a959ef7998e5bc20b923a36ebd))
+
 ## [1.0.6](https://github.com/Jmainguy/ghReview/compare/v1.0.5...v1.0.6) (2025-11-10)
 
 

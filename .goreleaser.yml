@@ -11,12 +11,10 @@ builds:
     - linux
   goarch:
     - amd64
-dockers:
-  - image_templates:
-    - "zot.soh.re/{{ tolower .ProjectName }}:{{ .Tag }}"
+    - arm64
 nfpms:
 - file_name_template: '{{ .ProjectName }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
-  homepage:  https://soh.re
+  homepage: https://github.com/Jmainguy/ghReview
   description: a bot to track when a user is assigned a review in Github, and send them a message about it via slack
   maintainer: Jonathan Seth Mainguy <jon@soh.re>
   license: GPLv2
@@ -37,3 +35,80 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+kos:
+  - 
+    # Main path to build.
+    # It must be a relative path
+    #
+    # Default: build.main.
+    main: .
+
+    # Working directory used to build.
+    #
+    # Default: build.dir.
+    working_dir: .
+
+    # Base image to publish to use.
+    #
+    # Default: 'cgr.dev/chainguard/static'.
+    # base_image: chainguard/wolfi-base
+
+    # Repository to push to.
+    #
+    # Default: '$KO_DOCKER_REPO'.
+    repository: "zot.soh.re"
+
+    # Platforms to build and publish.
+    #
+    # Default: 'linux/amd64'.
+    platforms:
+      - linux/amd64
+      - linux/arm64
+
+    # Tag to build and push.
+    # Empty tags are ignored.
+    #
+    # Default: 'latest'.
+    # Templates: allowed.
+    tags:
+      - latest
+      - "{{.Tag}}"
+
+    # Creation time given to the image
+    # in seconds since the Unix epoch as a string.
+    #
+    # Templates: allowed.
+    creation_time: "{{.CommitTimestamp}}"
+
+    # Creation time given to the files in the kodata directory
+    # in seconds since the Unix epoch as a string.
+    #
+    # Templates: allowed.
+    ko_data_creation_time: "{{.CommitTimestamp}}"
+
+    # SBOM format to use.
+    #
+    # Default: 'spdx'.
+    # Valid options are: spdx and none.
+    sbom: none
+
+    labels:
+      org.opencontainers.image.created: "{{.Date}}"
+      org.opencontainers.image.title: "{{.ProjectName}}"
+      org.opencontainers.image.revision: "{{.FullCommit}}"
+      org.opencontainers.image.version: "{{.Version}}"
+      org.opencontainers.image.authors: "Jonathan Seth Mainguy <jon@soh.re>"
+      org.opencontainers.image.vendor: Jmainguy
+      org.opencontainers.image.url: "https://github.com/Jmainguy/ghReview"
+      org.opencontainers.image.source: "https://github.com/Jmainguy/ghReview"
+      org.opencontainers.image.description: "a bot to track when a user is assigned a review in Github, and send them a message about it via slack"
+      org.opencontainers.image.licenses: "GPL-2.0"
+      
+    # Bare uses a tag on the $KO_DOCKER_REPO without anything additional.
+    bare: true
+
+    # Whether to preserve the full import path after the repository name.
+    preserve_import_paths: false
+
+    # Whether to use the base path without the MD5 hash after the repository name.
+    base_import_paths: true

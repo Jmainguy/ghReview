@@ -5,7 +5,7 @@ go 1.25
 toolchain go1.25.1
 
 require (
-	github.com/google/go-github/v74 v74.0.0
+	github.com/google/go-github/v78 v78.0.0
 	github.com/google/go-github/v78 v78.0.0
 	github.com/slack-go/slack v0.17.3
 	golang.org/x/oauth2 v0.31.0

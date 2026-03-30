@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.8](https://github.com/Jmainguy/ghReview/compare/v1.0.7...v1.0.8) (2026-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([69c6a3e](https://github.com/Jmainguy/ghReview/commit/69c6a3eab76cc77879b3ef0a4c67d4926b686292))
+* **deps:** update all non-major dependencies ([417cae8](https://github.com/Jmainguy/ghReview/commit/417cae8d9ba13b2dae5b4bb45aef8c82f5cdc065))
+* **deps:** update module github.com/google/go-github/v78 to v79 ([85a22eb](https://github.com/Jmainguy/ghReview/commit/85a22eb02691a1a8e9eb35bb3551204f5b4e722a))
+* **deps:** update module github.com/google/go-github/v78 to v79 ([492603c](https://github.com/Jmainguy/ghReview/commit/492603cbdd0960f420cd30af8d5252e7d0ec1a1d))
+* **deps:** update module github.com/google/go-github/v78 to v84 ([f3cd111](https://github.com/Jmainguy/ghReview/commit/f3cd11116c51e92fc3efe678edf022e32f6ac500))
+* **deps:** update module github.com/google/go-github/v78 to v84 ([5bd6ff3](https://github.com/Jmainguy/ghReview/commit/5bd6ff3ad7bfcb9c464583d839bde4df5ebc58c1))
+* **deps:** update module github.com/google/go-github/v79 to v84 ([363cd73](https://github.com/Jmainguy/ghReview/commit/363cd739f605461ca061b818859b995cdcaa5170))
+* **deps:** update module github.com/google/go-github/v79 to v84 ([4d645cd](https://github.com/Jmainguy/ghReview/commit/4d645cd1d688800dea3e35eb2ea90999d16cba62))
+* update to github 84 ([ee93aa7](https://github.com/Jmainguy/ghReview/commit/ee93aa79d614cf417c3418a4889129337653afb6))
+
 ## [1.0.7](https://github.com/Jmainguy/ghReview/compare/v1.0.6...v1.0.7) (2025-11-10)
 
 

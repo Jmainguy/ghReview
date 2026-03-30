@@ -5,7 +5,7 @@ go 1.25.0
 toolchain go1.26.1
 
 require (
-	github.com/google/go-github/v78 v78.0.0
+	github.com/google/go-github/v84 v84.0.0
 	github.com/google/go-github/v79 v79.0.0
 	github.com/google/go-github/v84 v84.0.0
 	github.com/slack-go/slack v0.20.0

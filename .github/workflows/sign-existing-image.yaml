@@ -1,0 +1,45 @@
+name: Sign existing OCI image
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing OCI image tag to sign
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login to Zot
+        uses: docker/login-action@v4
+        with:
+          registry: zot.soh.re
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Resolve immutable image digest
+        id: image
+        env:
+          IMAGE: zot.soh.re/jmainguy/ghreview
+          TAG: ${{ inputs.tag }}
+        run: |
+          digest="$(docker buildx imagetools inspect "${IMAGE}:${TAG}" --format '{{json .Manifest.Digest}}' | tr -d '"')"
+          test -n "${digest}"
+          echo "artifact=${IMAGE}@${digest}" >> "${GITHUB_OUTPUT}"
+
+      - name: Sign and verify image digest
+        uses: Jmainguy/notation-action@v1
+        with:
+          version: 1.3.2
+          artifact: ${{ steps.image.outputs.artifact }}
+          key-name: jon-soh-re
+          private-key: ${{ secrets.NOTATION_PRIVATE_KEY }}
+          certificate-chain: ${{ secrets.NOTATION_CERTIFICATE_CHAIN }}
+          ca-certificate: ${{ secrets.NOTATION_CA_CERTIFICATE }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}

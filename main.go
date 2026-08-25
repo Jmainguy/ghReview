@@ -7,9 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/go-github/v84/github"
+	"github.com/google/go-github/v90/github"
 	"github.com/slack-go/slack"
-	"golang.org/x/oauth2"
 )
 
 func main() {
@@ -21,12 +20,10 @@ func main() {
 
 	api := slack.New(slackToken)
 	ctx := context.Background()
-	ts := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: os.Getenv("ghReviewToken")},
-	)
-	tc := oauth2.NewClient(ctx, ts)
-
-	client := github.NewClient(tc)
+	client, err := github.NewClient(github.WithAuthToken(os.Getenv("ghReviewToken")))
+	if err != nil {
+		panic(err)
+	}
 
 	alreadyPinged := make(map[string]bool)
 

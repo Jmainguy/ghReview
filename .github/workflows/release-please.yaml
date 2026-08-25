@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing git tag to publish with GoReleaser
+        required: true
+        type: string
 
 jobs:
   release-please:
@@ -12,5 +18,11 @@ jobs:
       token: ${{ secrets.GITHUB_TOKEN }}
       docker_username: ${{ secrets.DOCKER_USERNAME }}
       docker_password: ${{ secrets.DOCKER_PASSWORD }}
+      notation_private_key: ${{ secrets.NOTATION_PRIVATE_KEY }}
+      notation_certificate_chain: ${{ secrets.NOTATION_CERTIFICATE_CHAIN }}
+      notation_ca_certificate: ${{ secrets.NOTATION_CA_CERTIFICATE }}
     with:
       docker_url: zot.soh.re
+      registry_namespace: jmainguy
+      image_name: ghreview
+      tag: ${{ inputs.tag || '' }}

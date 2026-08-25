@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.10](https://github.com/Jmainguy/ghReview/compare/v1.0.9...v1.0.10) (2026-08-25)
+
+
+### Bug Fixes
+
+* **ci:** add OCI signature recovery workflow ([#134](https://github.com/Jmainguy/ghReview/issues/134)) ([da07459](https://github.com/Jmainguy/ghReview/commit/da07459601e6eaa15930950af5bd8f24af5de04f))
+* **ci:** sign published OCI images ([#132](https://github.com/Jmainguy/ghReview/issues/132)) ([f16dc4b](https://github.com/Jmainguy/ghReview/commit/f16dc4bc90e0ed0fbb2fade3aa9e91c1159683bd))
+
 ## [1.0.9](https://github.com/Jmainguy/ghReview/compare/v1.0.8...v1.0.9) (2026-08-25)
 
 

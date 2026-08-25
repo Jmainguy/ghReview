@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.9](https://github.com/Jmainguy/ghReview/compare/v1.0.8...v1.0.9) (2026-08-25)
+
+
+### Bug Fixes
+
+* **deps:** migrate go-github from v84 to v90 ([#131](https://github.com/Jmainguy/ghReview/issues/131)) ([d155fa1](https://github.com/Jmainguy/ghReview/commit/d155fa1cc9aca4c2dfc3457ea0806c43294739c2))
+* **deps:** update module github.com/google/go-github/v84 to v90 ([#127](https://github.com/Jmainguy/ghReview/issues/127)) ([53a7df1](https://github.com/Jmainguy/ghReview/commit/53a7df14bdedcd4d690218a2111687783a6512f7))
+* **deps:** update module github.com/slack-go/slack to v0.21.0 ([814e570](https://github.com/Jmainguy/ghReview/commit/814e57064cbc0d94c9e6d12704bd7c76a4bffd03))
+* **deps:** update module github.com/slack-go/slack to v0.21.0 ([b1804c9](https://github.com/Jmainguy/ghReview/commit/b1804c9f1f83cc32cf11ae35d3c5f8d907bc7b46))
+
 ## [1.0.8](https://github.com/Jmainguy/ghReview/compare/v1.0.7...v1.0.8) (2026-03-30)
 
 

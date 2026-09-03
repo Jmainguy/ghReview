@@ -1,11 +1,12 @@
 module github.com/jmainguy/ghReview
 
-go 1.25.0
+go 1.26.0
 
 toolchain go1.27.0
 
 require (
 	github.com/google/go-github/v90 v90.0.0
+	github.com/google/go-github/v91 v91.0.0
 	github.com/slack-go/slack v0.29.0
 )
 

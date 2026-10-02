@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/Jmainguy/ghReview/compare/v1.0.10...v1.0.11) (2026-10-02)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/google/go-github/v90 to v92 ([#137](https://github.com/Jmainguy/ghReview/issues/137)) ([ab34690](https://github.com/Jmainguy/ghReview/commit/ab346907e62f0551589b40c16874ee06f61a76bc))
+
 ## [1.0.10](https://github.com/Jmainguy/ghReview/compare/v1.0.9...v1.0.10) (2026-08-25)
 
 

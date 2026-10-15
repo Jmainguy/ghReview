@@ -7,6 +7,7 @@ toolchain go1.27.1
 require (
 	github.com/google/go-github/v90 v90.0.0
 	github.com/google/go-github/v92 v92.0.0
+	github.com/google/go-github/v93 v93.0.0
 	github.com/slack-go/slack v0.29.0
 )
 
